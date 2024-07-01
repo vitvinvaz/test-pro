@@ -5,12 +5,42 @@
     scroll-behavior: smooth;
 }   
 body{
-    background-color: thistle;
-    min-height: 150vh;
+    background-color: rgb(42, 88, 144);
+    min-height: 350vh;
 }
 header{
     background-color: #1C1D21;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }    
+.myself{
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.myself .title{
+    position: relative;
+    top: 15%;
+    margin-left: 250px;
+    margin-top: 170px;
+    color: rgb(172, 209, 204);
+    font-size: 2rem;
+    word-spacing: 10px;
+    font-family: sans-serif;
+    text-shadow: black 1px 1px 1px;
+}
+
+img{
+    position: absolute;
+    border-radius: 50%;
+    left: 60%;
+    top: 25%;
+    border: 5px solid black;
+}
 .menu{
     text-decoration: none;
     background-color:#BB9BB0;
@@ -45,16 +75,21 @@ main .one h1{
     font-size: 3.5rem;
     letter-spacing: 2px;
     padding: 1rem;
-    text-shadow: black 2px 2px 5px;
-    color: ivory;
+    text-shadow: black 2px 2px 2px;
+    color: rgb(51, 134, 94);
 }
  .one{
-    background-color:#a288a666;
-    width: 35%;
+    width: 94%;
+    position: relative;
+    top: 650px;
+    height:750px;
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: black 5px 7px 10px;
     flex-wrap: nowrap;
+    background-image: url(images/creative.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
  }
  p{
     font-size: 1.5rem;
@@ -78,7 +113,8 @@ main .one h1{
     box-shadow: black 5px 5px 10px ;
     height: 500px;
     position: absolute;
-    margin-top: 50px;
+    top: 1700px;
+    margin-top: 150px;
  }
  .about p{
     word-spacing: 10px;
@@ -94,7 +130,7 @@ main .one h1{
     width: 100%;
     background-color:#1C1D21 ;
     position: absolute;
-    bottom:-50%;
+    bottom: -300%;
     color: #DCE0D9;
     height: 110px;
     display: flex;
